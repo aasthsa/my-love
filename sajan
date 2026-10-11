@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry, Gadhu ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
+  color: #78334f;
+  text-align: center;
+  background: linear-gradient(145deg, #ffe1e9, #fff7fa, #ffd5e2);
+  overflow-x: hidden;
+}
+
+main {
+  width: min(92%, 650px);
+  margin: 35px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.teddy { font-size: 65px; margin-bottom: 5px; }
+
+h1 {
+  color: #c83e70;
+  font-size: clamp(35px, 9vw, 55px);
+  margin: 8px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #b94d76;
+}
+
+.card {
+  background: rgba(255,255,255,.86);
+  border: 1px solid #ffd0df;
+  border-radius: 24px;
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 0 12px 35px #bd66801b;
+}
+
+.letter {
+  text-align: left;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+button {
+  background: #d64c7b;
+  color: white;
+  border: none;
+  padding: 15px 23px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #d64c7b35;
+}
+
+button:active { transform: scale(.97); }
+
+#extra {
+  display: none;
+  border: 2px dashed #f0a2bb;
+  background: #fff0f5;
+  border-radius: 22px;
+  padding: 22px;
+  margin-top: 24px;
+  line-height: 1.9;
+  animation: appear .6s ease;
+}
+
+footer {
+  padding: 22px 0 35px;
+  color: #bc547b;
+}
+
+.float-heart {
+  position: fixed;
+  bottom: -35px;
+  z-index: 0;
+  pointer-events: none;
+  animation: rise 7s linear forwards;
+}
+
+@keyframes rise {
+  to { transform: translateY(-110vh) rotate(30deg); opacity: 0; }
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+<main>
+  <div class="teddy">🧸💗</div>
+
+  <h1>I'm Sorry, Gadhu ♡</h1>
+  <p class="subtitle">For the one who means so much to me 🥺</p>
+
+  <section class="card letter">
+    <p>Hey Gadhu, ❤️</p>
+
+    <p>
+      sorry yrr mereko nhi pta lgta bolne se phele kya
+    bolna chahiye kya nhi...i love you agr aapko yeh lgta
+     hai ki mai sch mein breakup krlungi toh aisa kuch ni hai 
+     kha jaugi mai aapke bina... rhugi kaise aapke bina 
+     is time pr aap mere liye mere se zada ho... jitna mai khud
+     ko pyar krti hu us se bhot bhot bhotttt zada aapko pyaar krti
+     hu. toh aap iski tension matt lo ki mai shod jaugi ya kbhi bhi 
+     breakup krlungi... vo breakup vali baat isliye boli thi taaki 
+     aap mere se pucho ki mere ko hua kya hai, sb kuch mere sath clear 
+     kro kyuki mai sch mein darti hu aapko khone se... yrr mai humesha 
+     ke liye aapke sath rehna chahti hu...kbhi kbhi overthinking hoti hai 
+     kuch zada soch leti hu but yeh sb khud hota hai mereko kyuki aapke
+     bina mai ni reh skti... but mereko baad mein sch mein bhot bura lga 
+     ki maine itna kuch bola aapko aur aapne sch mein us time sorry bhi bola 
+     even ki aapki koi glti bhi ni thi.... i'm sorry yrr.... please ho ske jldi
+     jldi maaf krdo.
+    </p>
+
+    <p>
+      vse aapki trip bhi khrab kri maine sb yhi soch re honge 
+      ki kaisi si hu mai, aap ghum re ho aur mai aapko preshan
+      kr ri hu... aap bhi yhi soch re hoge, yrr mai dumb hu sch mein
+      mereko yr tension thi overthink kr ri thi upr se dant pdhi thi
+      toh dimag ni chl ra tha... iske liye bhi sorry.
+    </p>
+
+    <p>
+      ummmm.... i love you puttu, please mere sath 
+      humesha rehna... ❤️
+    </p>
+
+    <p>With all my heart,<br>
+    aapki pyari si gendi, phool kumari, hippo, june, noni, motti, gugu 💗</p>
+  </section>
+
+  <button onclick="openLetter()" id="openBtn">
+    💌 Open one more little message
+  </button>
+
+  <section id="extra">
+    <h2>One last thing, deepak ji 🥹💕</h2>
+
+    <p>
+       aap please try krna ki aapne birthday pr 
+       aap mere paas aajao...hum usdin bhot fun krege 
+       mai chahti hu ki usdin aap meere paas ho 
+       mai aaapko birthday vali kissi bhi dungi 
+
+    <h3>I'm really sorry, bubu. 🫶🏻</h3>
+    <p>meri traf se aapko bhot sara pyaar, aur bhot sari
+        kissi, aur bhot sari zor se tight vali hug 🧸💗</p>
+  </section>
+
+  <footer>
+    Made with love, honesty & a little pink magic ♡
+    <p>🌷 You are important to me 🌷</p>
+  </footer>
+</main>
+
+<script>
+function openLetter() {
+  document.getElementById("extra").style.display = "block";
+  document.getElementById("openBtn").textContent =
+    "💗 My heart is open to you";
+
+  document.getElementById("extra").scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function makeHeart() {
+  const heart = document.createElement("span");
+  heart.className = "float-heart";
+  heart.textContent = ["💗", "💕", "♡", "💖"][
+    Math.floor(Math.random() * 4)
+  ];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (16 + Math.random() * 20) + "px";
+  heart.style.animationDuration = (5 + Math.random() * 4) + "s";
+
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 9000);
+}
+
+setInterval(makeHeart, 650);
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry, Gadhu ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, serif;
